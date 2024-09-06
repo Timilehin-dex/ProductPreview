@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="bg-primary-cream">
+    <main class="sm:h-screen sm:grid sm:place-content-center px-4 py-6 sm:p-0">
+      <section
+        class="max-w-2xl sm:flex bg-neutral-white rounded-xl overflow-hidden"
+      >
+        <div class="basis-1/2">
+          <img
+            class="hidden sm:block"
+            src="images/image-product-desktop.jpg"
+            alt=""
+          />
+          <img
+            class="block sm:hidden"
+            src="images/image-product-mobile.jpg"
+            alt=""
+          />
+        </div>
+        <div class="grid gap-4 basis-1/2 p-8">
+          <h4 class="text-neutral-darkGrayishBlue tracking-[0.5rem] text-sm">
+            PERFUME
+          </h4>
+          <h2
+            class="font-fraunces text-neutral-veryDarkBlue text-4xl font-black"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h2>
+          <p
+            class="text-neutral-darkGrayishBlue text-base font-medium tracking-wider"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex items-center gap-x-6">
+            <h4 class="font-fraunces text-primary-darkCyan font-black text-4xl">
+              $149.99
+            </h4>
+            <span class="text-sm text-neutral-darkGrayishBlue font-medium"
+              ><s>$169.99</s></span
+            >
+          </div>
+
+          <div
+            class="bg-primary-darkCyan rounded-lg text-neutral-white flex justify-center items-center gap-x-3 py-3 sm:py-2 px-3 font-semibold cursor-pointer hover:bg-primary-darkCyanHover transition"
+          >
+            <img src="images/icon-cart.svg" alt="" />Add to Cart
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
